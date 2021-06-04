@@ -3,14 +3,12 @@
     "description": "Laravel notification channel for textit Sri Lanka",
     "homepage": "https://github.com/laravel-notification-channels/textit",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Upeksha Liyanage",
-            "email": "upeksha@owaslo.com",
-            "homepage": "https://www.owaslo.com",
-            "role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Upeksha Liyanage",
+        "email": "upeksha@owaslo.com",
+        "homepage": "https://www.owaslo.com",
+        "role": "Developer"
+    }],
     "require": {
         "php": ">=7.2",
         "illuminate/notifications": "~6.0 || ~7.0 || ~8.0",
@@ -36,5 +34,12 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Owaslo\\Textit\\TextitServiceProvider"
+            ]
+        }
     }
 }
