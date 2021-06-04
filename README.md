@@ -1,6 +1,6 @@
 Please see [this repo](https://github.com/laravel-notification-channels/channels) for instructions on how to submit a channel proposal.
 
-# Laravel Textit Channel
+# Laravel Textit Notification Channel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laravel-notification-channels/textit.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/textit)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -12,13 +12,6 @@ Please see [this repo](https://github.com/laravel-notification-channels/channels
 [![Total Downloads](https://img.shields.io/packagist/dt/laravel-notification-channels/textit.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/textit)
 
 This package makes it easy to send notifications using [Textit](link to service) with Laravel 5.5+, 6.x and 7.x
-
-**Note:** Replace ```Textit``` ```Textit``` ```Upeksha Liyanage``` ```glupeksha``` ```https://www.owaslo.com``` ```upeksha@owaslo.com``` ```textit``` ```Laravel notification channel for textit Sri Lanka``` ```:style_ci_id``` ```:sensio_labs_id``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md), [composer.json](composer.json) and other files, then delete this line.
-**Tip:** Use "Find in Path/Files" in your code editor to find these keywords within the package directory and replace all occurences with your specified term.
-
-This is where your description should go. Add a little code example so build can understand real quick how the package can be used. Try and limit it to a paragraph or two.
-
-
 
 ## Contents
 
