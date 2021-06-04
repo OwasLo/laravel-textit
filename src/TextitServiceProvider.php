@@ -16,7 +16,7 @@ class TextitServiceProvider extends ServiceProvider
         // Bootstrap code here.
         Notification::resolved(function (ChannelManager $service) {
             $service->extend('textit', function ($app) {
-                return new Textit(config('services.textit'));
+                return new TextitChannel(config('services.textit'));
             });
         });
     }
