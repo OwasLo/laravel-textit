@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\Textit\Test;
+namespace Owaslo\Textit\Test;
 
 use PHPUnit\Framework\TestCase;
 

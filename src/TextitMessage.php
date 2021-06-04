@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\Textit;
+namespace Owaslo\Textit;
 
 use Illuminate\Support\Arr;
 

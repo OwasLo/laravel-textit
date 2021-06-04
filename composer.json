@@ -1,5 +1,5 @@
 {
-    "name": "laravel-notification-channels/textit",
+    "name": "owaslo/textit",
     "description": "Laravel notification channel for textit Sri Lanka",
     "homepage": "https://github.com/laravel-notification-channels/textit",
     "license": "MIT",
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NotificationChannels\\Textit\\": "src"
+            "Owaslo\\Textit\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NotificationChannels\\Textit\\Test\\": "tests"
+            "Owaslo\\Textit\\Test\\": "tests"
         }
     },
     "scripts": {

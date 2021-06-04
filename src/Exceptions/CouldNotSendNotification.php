@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\Textit\Exceptions;
+namespace Owaslo\Textit\Exceptions;
 
 class CouldNotSendNotification extends \Exception
 {

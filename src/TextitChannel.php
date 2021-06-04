@@ -1,9 +1,9 @@
 <?php
 
-namespace NotificationChannels\Textit;
+namespace Owaslo\Textit;
 
 use Illuminate\Support\Arr;
-use NotificationChannels\Textit\Exceptions\CouldNotSendNotification;
+use Owaslo\Textit\Exceptions\CouldNotSendNotification;
 use Illuminate\Notifications\Notification;
 
 class TextitChannel
@@ -44,7 +44,7 @@ class TextitChannel
      * @param mixed $notifiable
      * @param \Illuminate\Notifications\Notification $notification
      *
-     * @throws \NotificationChannels\Textit\Exceptions\CouldNotSendNotification
+     * @throws \Owaslo\Textit\Exceptions\CouldNotSendNotification
      */
     public function send($notifiable, Notification $notification)
     {
