@@ -56,7 +56,8 @@ class TextitChannel
         }
 
         $url = "$this->baseurl/?id=$this->user&pw=$this->password&to=$textitMessage->to&text=$textitMessage->text";
-
+        var_dump($url);
+        
         $ret = file($url);
 
         $response = explode(":", $ret[0]);
