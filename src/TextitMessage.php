@@ -11,14 +11,14 @@ class TextitMessage
      *
      * @var string
      */
-    protected $to;
+    public $to;
 
     /**
      * Message content.
      *
      * @var string
      */
-    protected $text;
+    public $text;
 
 
     /**
