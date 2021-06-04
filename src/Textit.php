@@ -6,7 +6,7 @@ use Illuminate\Support\Arr;
 use Owaslo\Textit\Exceptions\CouldNotSendNotification;
 use Illuminate\Notifications\Notification;
 
-class TextitChannel
+class Textit
 {
     /**
      * Login to API endpoint.
@@ -30,7 +30,6 @@ class TextitChannel
     protected $baseurl;
 
 
-
     public function __construct(array $config = [])
     {
         $this->user = Arr::get($config, 'user');
@@ -46,10 +45,8 @@ class TextitChannel
      *
      * @throws \Owaslo\Textit\Exceptions\CouldNotSendNotification
      */
-    public function send($notifiable, Notification $notification)
+    public function send(TextitMessage $textitMessage)
     {
-
-        $textitMessage = $notification->toTextit($notifiable);
 
         if (!$textitMessage instanceof TextitMessage) {
             return;

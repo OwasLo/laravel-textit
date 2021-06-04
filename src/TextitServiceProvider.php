@@ -19,6 +19,10 @@ class TextitServiceProvider extends ServiceProvider
                 return new TextitChannel(config('services.textit'));
             });
         });
+
+        $this->app->singleton(Textit::class, function ($app) {
+            return new Textit(config('services.textit'));
+        });
     }
 
     /**
