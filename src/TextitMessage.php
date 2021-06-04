@@ -29,6 +29,6 @@ class TextitMessage
     public function __construct(string $to, string $text)
     {
         $this->to = $to;
-        $this->text = $text;
+        $this->text = urlencode($text);
     }
 }
