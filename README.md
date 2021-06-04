@@ -1,6 +1,6 @@
 Please see [this repo](https://github.com/laravel-notification-channels/channels) for instructions on how to submit a channel proposal.
 
-# A Boilerplate repo for contributions
+# Laravel Textit Channel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/laravel-notification-channels/textit.svg?style=flat-square)](https://packagist.org/packages/laravel-notification-channels/textit)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
@@ -36,15 +36,48 @@ This is where your description should go. Add a little code example so build can
 
 ## Installation
 
-Please also include the steps for any third-party service setup that's required for this package.
+You can install this package via composer:
+``` bash
+composer require laravel-notification-channels/textit
+```
 
 ### Setting up the Textit service
 
-Optionally include a few steps how users can set up the service.
+Add your Textit sms gate user, password and baseurl to your config/services.php:
+
+```php
+// config/services.php
+...
+    'textit' => [
+        'user' => env('TEXTIT_USER'),
+        'password' => env('TEXTIT_PASSWORD'),
+        'baseurl' => env('TEXTIT_BASEURL'),
+    ],
+...
+```
+
 
 ## Usage
 
-Some code examples, make it clear how to use the package
+You can use the channel in your via() method inside the notification:
+
+```php
+use Illuminate\Notifications\Notification;
+use NotificationChannels\TurboSMS\TurboSMSMessage;
+
+class AccountApproved extends Notification
+{
+    public function via($notifiable)
+    {
+        return ["textit"];
+    }
+
+    public function toTextit($notifiable)
+    {
+        return (new TextitMessage("Your account was approved!"));       
+    }
+}
+```
 
 ### Available Message methods
 
