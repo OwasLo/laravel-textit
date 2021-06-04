@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\:channel_namespace\Test;
+namespace NotificationChannels\Textit\Test;
 
 use PHPUnit\Framework\TestCase;
 
