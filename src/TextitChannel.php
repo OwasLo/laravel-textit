@@ -57,15 +57,17 @@ class TextitChannel
 
         $url = "$this->baseurl/?id=$this->user&pw=$this->password&to=$textitMessage->to&text=$textitMessage->text";
 
-        $ret = file($url);
+        // $ret = file($url);
 
-        $response = explode(":", $ret[0]);
+        // $response = explode(":", $ret[0]);
 
-        if (trim($response[0]) != "OK") {
-            throw CouldNotSendNotification::serviceRespondedWithAnError($response[1]);
-        }
+        // if (trim($response[0]) != "OK") {
+        //     throw CouldNotSendNotification::serviceRespondedWithAnError($response[1]);
+        // }
 
-        return $response[1];
+        // return $response[1];
+
+        return "Test function";
         //$response = [a call to the api of your notification send]
 
         //        if ($response->error) { // replace this by the code need to check for errors
